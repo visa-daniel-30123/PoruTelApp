@@ -1,0 +1,342 @@
+[
+  {
+    "cantitate": {
+      "Value": 1,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "denumireProd": {
+      "Value": "Kurtos",
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "id": {
+      "Value": 1,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "pret": {
+      "Value": 15,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    }
+  },
+  {
+    "id": {
+      "Value": 2,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "denumireProd": {
+      "Value": "HotDog",
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "cantitate": {
+      "Value": 0,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "pret": {
+      "Value": 7,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    }
+  },
+  {
+    "id": {
+      "Value": 3,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "denumireProd": {
+      "Value": "Aripioare",
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "cantitate": {
+      "Value": 0,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "pret": {
+      "Value": 27,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    }
+  },
+  {
+    "id": {
+      "Value": 4,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "denumireProd": {
+      "Value": "Crispy",
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "cantitate": {
+      "Value": 0,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "pret": {
+      "Value": 29,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    }
+  },
+  {
+    "id": {
+      "Value": 5,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "denumireProd": {
+      "Value": "CascavalPane",
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "cantitate": {
+      "Value": 0,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "pret": {
+      "Value": 27,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    }
+  },
+  {
+    "id": {
+      "Value": 15,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "denumireProd": {
+      "Value": "Cafea",
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "cantitate": {
+      "Value": 0,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "pret": {
+      "Value": 8,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    }
+  },
+  {
+    "id": {
+      "Value": 23,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "denumireProd": {
+      "Value": "Cola",
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "cantitate": {
+      "Value": 0,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "pret": {
+      "Value": 7,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    }
+  },
+  {
+    "id": {
+      "Value": 25,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "denumireProd": {
+      "Value": "Fanta",
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "cantitate": {
+      "Value": 0,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "pret": {
+      "Value": 7,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    }
+  },
+  {
+    "id": {
+      "Value": 38,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "denumireProd": {
+      "Value": "Becks",
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "cantitate": {
+      "Value": 0,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "pret": {
+      "Value": 8,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    }
+  },
+  {
+    "id": {
+      "Value": 43,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "denumireProd": {
+      "Value": "BergembierFresh",
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "cantitate": {
+      "Value": 0,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    },
+    "pret": {
+      "Value": 7,
+      "HasChanges": false,
+      "IsNotificationsSuspended": false,
+      "Error": null,
+      "ValidationAttributes": [
+      ]
+    }
+  }
+]
