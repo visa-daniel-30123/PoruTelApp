@@ -3,65 +3,70 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PoruTelApp"
              x:Class="PoruTelApp.MainPage">
-   
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
+    <FlexLayout
+            
             Padding="30,0"
             VerticalOptions="Center">
-            <ListView 
-                ItemsSource="{x:Binding produse}"
-               x:Name="produseMeniu"
-             HorizontalOptions="Center"   
-             >
-                <ListView.Header>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="1*"></ColumnDefinition>
-                            <ColumnDefinition Width="1*"></ColumnDefinition>
-                            <ColumnDefinition Width="1*"></ColumnDefinition>
-                            <ColumnDefinition Width="1*"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <ListView Grid.Row="0"
+                        ItemsSource="{x:Binding produse}"
+                        x:Name="produseMeniu"
+                        HorizontalOptions="Center"
+                        VerticalScrollBarVisibility="Always"
+                        
+                     >
+                    <ListView.Header>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"></ColumnDefinition>
+                                <ColumnDefinition Width="1*"></ColumnDefinition>
+                                <ColumnDefinition Width="1*"></ColumnDefinition>
+                                <ColumnDefinition Width="1*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
 
-                        <Label Grid.Column="0" Text="Id"/>
-                        <Label Grid.Column="1" Text="Denumire"/>
-                        <Label Grid.Column="2" Text="Pret"/>
-                        <Label Grid.Column="3" Text="Cantitate"/>
-                    </Grid>
-                </ListView.Header>
-                <ListView.ItemTemplate>
-                    <DataTemplate x:Name="ProduseDataTemplate" x:DataType="local:Produs">
+                            <Label Grid.Column="0" Text="Id"/>
+                            <Label Grid.Column="1" Text="Denumire"/>
+                            <Label Grid.Column="2" Text="Pret"/>
+                            <Label Grid.Column="3" Text="Cantitate"/>
+                        </Grid>
+                    </ListView.Header>
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:Name="ProduseDataTemplate" x:DataType="local:Produs">
 
-                        <ViewCell>
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="1*"></ColumnDefinition>
-                                    <ColumnDefinition Width="4*"></ColumnDefinition>
-                                    <ColumnDefinition Width="2*"></ColumnDefinition>
-                                    <ColumnDefinition Width="2*"></ColumnDefinition>
-                                </Grid.ColumnDefinitions>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                                        <ColumnDefinition Width="4*"></ColumnDefinition>
+                                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
 
-                                <Label Grid.Column="0" Text="{Binding id.Value}"/>
-                                <Label Grid.Column="1" Text="{Binding denumireProd.Value}"/>
-                                <Label Grid.Column="2" Text="{Binding pret.Value}"/>
-                                <Label Grid.Column="3" Text="{Binding cantitate.Value}"/>
-                            </Grid>
-                        </ViewCell>
-                           
-                    </DataTemplate>
-                </ListView.ItemTemplate>
+                                    <Label Grid.Column="0" Text="{Binding id.Value}"/>
+                                    <Label Grid.Column="1" Text="{Binding denumireProd.Value}"/>
+                                    <Label Grid.Column="2" Text="{Binding pret.Value}"/>
+                                    <Label Grid.Column="3" Text="{Binding cantitate.Value}"/>
+                                </Grid>
+                            </ViewCell>
+
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+
+                </ListView>
                 
-            </ListView>
-            
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="adaugaProdus"
-                HorizontalOptions="Center" />
-
-        </VerticalStackLayout>
-    </ScrollView>
+             <Button Grid.Row="1"
+                    MaximumHeightRequest="20"
+                    MaximumWidthRequest="100"
+                    x:Name="CounterBtn"
+                    Text="Click me"
+                    Clicked="adaugaProdus"
+                    HorizontalOptions="Center" />
+        </Grid>
+    </FlexLayout>
 
 </ContentPage>

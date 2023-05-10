@@ -10,13 +10,15 @@
         Shell.FlyoutItemIsVisible="True"
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="MainPage"
+        Disappearing="ShellContent_Disappearing"/>
     <ShellContent
         
         Shell.FlyoutItemIsVisible="True"
-        
+       
         Title="Comanda"
         ContentTemplate="{DataTemplate local:Comanda}"
-        Route="Comanda" />
+        Route="Comanda"
+        />
 
 </Shell>

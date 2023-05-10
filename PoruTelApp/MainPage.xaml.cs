@@ -11,15 +11,15 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 	
-        MenuSingleton.Meniu.loadFromJson();
-        MenuSingleton.Meniu.AfiseazaProdouse(); 
+	    MenuSingleton.Meniu.loadFromJson();
+	    MenuSingleton.Meniu.AfiseazaProdouse();
 
-        MenuSingleton.Meniu.produse.Sort((p, q) => p.id.Value.CompareTo(q.id.Value));
-		
-		produseMeniu.ItemsSource=MenuSingleton.Meniu.produse;
-       // dataGridView1.DataSource = MenuSingleton.Meniu.produse;
-    
-    }
+		MenuSingleton.Meniu.produse.Sort((p, q) => p.id.Value.CompareTo(q.id.Value));
+
+		produseMeniu.ItemsSource = MenuSingleton.Meniu.produse;
+		//dataGridView1.DataSource = MenuSingleton.Meniu.produse;
+
+	}
 	private async void adaugaProdus(object sender, EventArgs e)
 	{
 		await Shell.Current.GoToAsync("//Comanda");

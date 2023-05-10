@@ -4,10 +4,47 @@
              x:Class="PoruTelApp.Comanda"
              Title="Comanda">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+       
+        <Label Text="Kurtos Kalacs "
+               x:Name="labelKurtos"/>
         
+        <Button Text="+ Kurtos"
+                 x:Name="Kurtosplus"
+                    Clicked="Kurtosplus_Clicked"/>
+        <Button Text=" - Kurtos"
+                 x:Name="Kurtosminus"
+                    Clicked="Kurtosminus_Clicked"/>
+        
+        <Label Text="Limonada "
+                x:Name="labelLimonada"/>
+        <Button Text="+ Limonada"
+                 x:Name="Limoplus"
+                    Clicked="Limoplus_Clicked"/>
+        <Button Text=" - Limonada"
+                 x:Name="LimoMINUS"
+                    Clicked="LimoMINUS_Clicked"/>
+        <Label Text="Inghetata "
+               x:Name="LabelInghetata"/>
+        <Button Text="+ Inghetata"
+                 x:Name="Inghetataplus"
+                   Clicked="Inghetataplus_Clicked"/>
+        <Button Text=" - Inghetata"
+                 x:Name="InghetataMinus"
+                    Clicked="InghetataMinus_Clicked"/>
+        
+          <Label Text="Kurtos cu Inghetata"
+               x:Name="KurtosInghetata"/>
+        <Button Text="+ Kurtos Inghetata"
+                 x:Name="KurtosInghetataplus"
+                   Clicked="KurtosInghetataplus_Clicked"/>
+        <Button Text=" - KurtosInghetata"
+                 x:Name="KurtosInghetataMinus"
+                    Clicked="KurtosInghetataMinus_Clicked"/>
+
+        <Button Text="Reset Counter "
+                x:Name="ResetCounter"
+                Clicked="ResetCounter_Clicked"/>
     </VerticalStackLayout>
+   
 </ContentPage>
+    

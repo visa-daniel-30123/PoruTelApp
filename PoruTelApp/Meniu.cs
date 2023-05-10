@@ -22,7 +22,8 @@ namespace PoruTelApp
         {
             if (!Contains(toAdd))
                 produse.Add(toAdd);
-           
+            produse.Add(toAdd);
+            produse.Add(toAdd);
         }
 
         private bool Contains(Produs toAdd)
