@@ -3,48 +3,91 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PoruTelApp.Comanda"
              Title="Comanda">
-    <VerticalStackLayout>
-       
-        <Label Text="Kurtos Kalacs "
-               x:Name="labelKurtos"/>
-        
-        <Button Text="+ Kurtos"
-                 x:Name="Kurtosplus"
-                    Clicked="Kurtosplus_Clicked"/>
-        <Button Text=" - Kurtos"
-                 x:Name="Kurtosminus"
+    <Grid HorizontalOptions="FillAndExpand" ColumnDefinitions="*">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" RowDefinitions="Auto,*" ColumnDefinitions="Auto, *" HorizontalOptions="CenterAndExpand">
+
+            <Label FontSize="Header" Grid.Row="0" HorizontalOptions="CenterAndExpand" Grid.ColumnSpan="2">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Kurtos: "/>
+                        <Span Text="{Binding ContorKurtos}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            
+            <Button Grid.Row="1" Grid.Column="0" Text=" - Kurtos" Margin="10"
+                 x:Name="Kurtosminus" HorizontalOptions="Fill" WidthRequest="150"
                     Clicked="Kurtosminus_Clicked"/>
-        
-        <Label Text="Limonada "
-                x:Name="labelLimonada"/>
-        <Button Text="+ Limonada"
-                 x:Name="Limoplus"
-                    Clicked="Limoplus_Clicked"/>
-        <Button Text=" - Limonada"
-                 x:Name="LimoMINUS"
-                    Clicked="LimoMINUS_Clicked"/>
-        <Label Text="Inghetata "
-               x:Name="LabelInghetata"/>
-        <Button Text="+ Inghetata"
-                 x:Name="Inghetataplus"
+
+            <Button Grid.Row="1" Grid.Column="1" Text="+ Kurtos" Margin="10"
+                 x:Name="Kurtosplus" WidthRequest="150"
+                    Clicked="Kurtosplus_Clicked"/>
+
+        </Grid>
+
+        <Grid Grid.Row="1" RowDefinitions="Auto,*" ColumnDefinitions="*, *" HorizontalOptions="CenterAndExpand">
+            <Label FontSize="Header" Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="CenterAndExpand" x:Name="labelLimonada">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Limonada: "/>
+                        <Span Text="{Binding ContorLimonada}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Grid.Row="1" Grid.Column="1" Text="+ Limonada" Margin="10"
+                     x:Name="Limoplus" WidthRequest="150"
+                        Clicked="Limoplus_Clicked"/>
+            <Button Grid.Row="1" Grid.Column="0" Text=" - Limonada" Margin="10"
+                     x:Name="LimoMINUS" WidthRequest="150"
+                        Clicked="LimoMINUS_Clicked"/>
+
+        </Grid>
+
+        <Grid Grid.Row="2" RowDefinitions="Auto,*" ColumnDefinitions="Auto, Auto" HorizontalOptions="CenterAndExpand">
+            <Label FontSize="Header" Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="CenterAndExpand" x:Name="labelInghetata">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Inghetata: "/>
+                        <Span Text="{Binding ContorInghetata}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Grid.Row="1" Grid.Column="1" Text="+ Inghetata" Margin="10"
+                 x:Name="Inghetataplus" WidthRequest="150"
                    Clicked="Inghetataplus_Clicked"/>
-        <Button Text=" - Inghetata"
+            <Button Grid.Row="1" Grid.Column="0" Text=" - Inghetata" Margin="10" WidthRequest="150"
                  x:Name="InghetataMinus"
                     Clicked="InghetataMinus_Clicked"/>
+        </Grid>
+        <Grid Grid.Row="3" RowDefinitions="Auto,*" ColumnDefinitions="Auto, Auto" HorizontalOptions="CenterAndExpand">
+            <Label FontSize="Header" Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="CenterAndExpand">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="KurtosInghetata: "/>
+                        <Span Text="{Binding ContorKurtosInghetata}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Grid.Row="1" Grid.Column="1" Text="+ Kurtos Inghetata" Margin="10"
+                     x:Name="KurtosInghetataplus" WidthRequest="150"
+                       Clicked="KurtosInghetataplus_Clicked"/>
+            <Button  Grid.Row="1" Grid.Column="0" Text=" - KurtosInghetata" Margin="10"
+                     x:Name="KurtosInghetataMinus" WidthRequest="150"
+                        Clicked="KurtosInghetataMinus_Clicked"/>
+        </Grid>
+        <Button Grid.Row="4" Text="Reset Counter " Margin="10"
+                    x:Name="ResetCounter"
+                    Clicked="ResetCounter_Clicked"/>
         
-          <Label Text="Kurtos cu Inghetata"
-               x:Name="KurtosInghetata"/>
-        <Button Text="+ Kurtos Inghetata"
-                 x:Name="KurtosInghetataplus"
-                   Clicked="KurtosInghetataplus_Clicked"/>
-        <Button Text=" - KurtosInghetata"
-                 x:Name="KurtosInghetataMinus"
-                    Clicked="KurtosInghetataMinus_Clicked"/>
-
-        <Button Text="Reset Counter "
-                x:Name="ResetCounter"
-                Clicked="ResetCounter_Clicked"/>
-    </VerticalStackLayout>
+    </Grid>
    
 </ContentPage>
     

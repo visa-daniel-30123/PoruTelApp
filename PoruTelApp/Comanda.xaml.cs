@@ -1,75 +1,66 @@
+using CommunityToolkit.Mvvm.ComponentModel;
+using Dto;
+using PoruTelApp.ViewModels;
+using System.ComponentModel;
+
 namespace PoruTelApp;
 
 public partial class Comanda : ContentPage
 {
-	public int ContorKurtos = 0;
-	public int ContorLimonada = 0;
-	public int ContorInghetata = 0;
-	public int ContorKurtosInghetata = 0;
-	public Comanda()
-	{
-		InitializeComponent();
-	}
+    private ComandaViewModel viewModel;
 
-	private void Kurtosplus_Clicked(object sender, EventArgs e)
-	{
-		ContorKurtos++;
-		labelKurtos.Text="KURTOS : "+ContorKurtos.ToString();
+    public Comanda(ComandaViewModel comandaViewModel)
+    {
+        InitializeComponent();
+        BindingContext = comandaViewModel;
+        viewModel = comandaViewModel;
+    }
 
-	}
+    private void Kurtosplus_Clicked(object sender, EventArgs e)
+    {
+        viewModel.ContorKurtos++;
+    }
 
-	private void Kurtosminus_Clicked(object sender, EventArgs e)
-	{
-		ContorKurtos--;
-		labelKurtos.Text = "KURTOS : " + ContorKurtos.ToString();
-	}
+    private void Kurtosminus_Clicked(object sender, EventArgs e)
+    {
+        viewModel.ContorKurtos--;
+    }
 
-	private void Limoplus_Clicked(object sender, EventArgs e)
-	{
-		ContorLimonada++;
-		labelLimonada.Text="Limnoanda: "+ContorLimonada.ToString();	
-	}
+    private void Limoplus_Clicked(object sender, EventArgs e)
+    {
+        viewModel.ContorLimonada++;
+    }
 
-	private void LimoMINUS_Clicked(object sender, EventArgs e)
-	{
-		ContorLimonada--;
-		labelLimonada.Text = "Limnoanda: " + ContorLimonada.ToString();
-	}
+    private void LimoMINUS_Clicked(object sender, EventArgs e)
+    {
+        viewModel.ContorLimonada--;
+    }
 
-	private void Inghetataplus_Clicked(object sender, EventArgs e)
-	{
-		ContorInghetata++;
-		LabelInghetata.Text="Inghetata : "+ContorInghetata.ToString();
-	}
+    private void Inghetataplus_Clicked(object sender, EventArgs e)
+    {
+        viewModel.ContorInghetata++;
+    }
 
-	private void InghetataMinus_Clicked(object sender, EventArgs e)
-	{
-		ContorInghetata--;
-		LabelInghetata.Text = "Inghetata : " + ContorInghetata.ToString();
-	}
+    private void InghetataMinus_Clicked(object sender, EventArgs e)
+    {
+        viewModel.ContorInghetata--;
+    }
 
-	private void ResetCounter_Clicked(object sender, EventArgs e)
-	{
-		ContorInghetata = 0;
-		ContorKurtos = 0;
-		ContorLimonada = 0;
-		ContorKurtosInghetata = 0;
-		LabelInghetata.Text = "Inghetata : " + ContorInghetata.ToString();
-		labelLimonada.Text = "Limnoanda: " + ContorLimonada.ToString();
-		labelKurtos.Text = "KURTOS : " + ContorKurtos.ToString();
-		KurtosInghetata.Text = "Kurtos cu Inghetata : " + ContorKurtosInghetata.ToString();
-	}
+    private void ResetCounter_Clicked(object sender, EventArgs e)
+    {
+        viewModel.ContorInghetata = 0;
+        viewModel.ContorKurtos = 0;
+        viewModel.ContorLimonada = 0;
+        viewModel.ContorKurtosInghetata = 0;
+    }
 
-	private void KurtosInghetataplus_Clicked(object sender, EventArgs e)
-	{
-		ContorKurtosInghetata++;
-		KurtosInghetata.Text = "Kurtos cu Inghetata: " + ContorKurtosInghetata.ToString();
+    private void KurtosInghetataplus_Clicked(object sender, EventArgs e)
+    {
+        viewModel.ContorKurtosInghetata++;
+    }
 
-	}
-
-	private void KurtosInghetataMinus_Clicked(object sender, EventArgs e)
-	{
-		ContorKurtosInghetata--;
-		KurtosInghetata.Text = "Kurtos cu Inghetata: " + ContorKurtosInghetata.ToString();
-	}
+    private void KurtosInghetataMinus_Clicked(object sender, EventArgs e)
+    {
+        viewModel.ContorKurtosInghetata--;
+    }
 }

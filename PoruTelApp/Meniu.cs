@@ -67,8 +67,8 @@ namespace PoruTelApp
 
         public void loadFromJson()
         {
-            string jsonString = File.ReadAllText(filename);
-            JsonSerializer.Deserialize<List<Produs>>(jsonString).ForEach(AdaugaProdus);
+            //string jsonString = File.ReadAllText(filename);
+            //JsonSerializer.Deserialize<List<Produs>>(jsonString).ForEach(AdaugaProdus);
             
             
            
